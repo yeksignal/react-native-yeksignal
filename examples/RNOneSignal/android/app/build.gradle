@@ -136,7 +136,7 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-onesignal')
+    compile project(':react-native-yeksignal')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:27.1.0"
     compile "com.facebook.react:react-native:+"  // From node_modules

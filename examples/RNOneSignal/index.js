@@ -17,11 +17,11 @@ import {
     KeyboardAvoidingView,
     ActivityIndicator,
     Platform,
-    ScrollView, 
+    ScrollView,
     Linking
 } from 'react-native';
 
-import OneSignal from 'react-native-onesignal';
+import OneSignal from 'react-native-yeksignal';
 
 let imageUri = 'https://cdn-images-1.medium.com/max/300/1*7xHdCFeYfD8zrIivMiQcCQ.png'
 
@@ -39,9 +39,9 @@ export default class RNOneSignal extends Component {
         OneSignal.setLogLevel(7, 0);
 
         let requiresConsent = false;
-       
-        this.setState({emailEnabled: false, 
-            animatingEmailButton : false, 
+
+        this.setState({emailEnabled: false,
+            animatingEmailButton : false,
             initialOpenFromPush : "Did NOT open from push",
             activityWidth : 0,
             width: 0,
@@ -54,14 +54,15 @@ export default class RNOneSignal extends Component {
 
         OneSignal.setRequiresUserPrivacyConsent(requiresConsent);
 
-        OneSignal.init("b2f7f966-d8cc-11e4-bed1-df8f05be55ba", {kOSSettingsKeyAutoPrompt : true});
+        // OneSignal.init("b2f7f966-d8cc-11e4-bed1-df8f05be55ba", {kOSSettingsKeyAutoPrompt : true});
+        OneSignal.init("22464deb-438e-4431-b7ee-195789da05a4", {kOSSettingsKeyAutoPrompt : true});
 
         var providedConsent = await OneSignal.userProvidedPrivacyConsent();
 
         this.setState({privacyButtonTitle : `Privacy Consent: ${providedConsent ? "Granted" : "Not Granted"}`, privacyGranted : providedConsent});
 
         OneSignal.setLocationShared(true);
-       
+
         OneSignal.inFocusDisplaying(2)
     }
 
