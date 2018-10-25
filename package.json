@@ -1,0 +1,38 @@
+{
+  "name": "react-native-yeksignal",
+  "version": "3.2.7",
+  "description": "React Native YekSignal Component",
+  "main": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "invariant": "^2.2.2"
+  },
+  "rnpm": {
+     "ios": {
+        "sourceDir": "./ios"
+     }
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "notifications",
+    "push",
+    "apns",
+    "gcm",
+    "onesignal",
+    "yeksignal"
+  ],
+  "bugs": {
+    "url": "https://github.com/yeksignal/react-native-yeksignal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeksignal/react-native-yeksignal"
+  },
+  "author": "YekSignal <https://yeksignal.com>",
+  "license": "MIT"
+}
