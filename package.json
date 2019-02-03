@@ -1,6 +1,6 @@
 {
   "name": "react-native-yeksignal",
-  "version": "3.2.7",
+  "version": "3.2.8",
   "description": "React Native YekSignal Component",
   "main": "index",
   "scripts": {
@@ -10,9 +10,9 @@
     "invariant": "^2.2.2"
   },
   "rnpm": {
-     "ios": {
-        "sourceDir": "./ios"
-     }
+    "ios": {
+      "sourceDir": "./ios"
+    }
   },
   "keywords": [
     "react-component",
